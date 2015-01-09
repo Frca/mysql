@@ -213,6 +213,8 @@ func (mc *mysqlConn) writeAuthPacket(cipher []byte) error {
 		clientSecureConn |
 		clientLongPassword |
 		clientTransactions |
+		clientMultiStatements |
+		clientMultiResults |
 		clientLocalFiles |
 		mc.flags&clientLongFlag
 
